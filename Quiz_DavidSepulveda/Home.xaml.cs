@@ -73,11 +73,15 @@ namespace Quiz_DavidSepulveda
         {
                if(cbxCarnes.IsChecked==true)
             {
+                lblPrecio.Visibility = Visibility.Visible;
                 txtCarrito.Items.Add(cmbCategoria.SelectedItem);
+                 lblPrecio.Content = "$" + (txtCarrito.Items.Count * 16000);
             }
             else
             {
+                lblPrecio.Visibility = Visibility.Visible;
                 txtCarrito.Items.Add(cmbVegana.SelectedItem);
+                lblPrecio.Content = "$" + (txtCarrito.Items.Count * 16000);
             }   
 
                 
@@ -110,13 +114,16 @@ namespace Quiz_DavidSepulveda
         {
             if (cbxCarnes.IsChecked == true)
             {
+
                 txtCarrito.Items.Remove(cmbCategoria.SelectedItem);
+                lblPrecio.Content = "$" + (txtCarrito.Items.Count * (32000 - 16000));
             }
             else
             {
                 txtCarrito.Items.Remove(cmbVegana.SelectedItem);
+                lblPrecio.Content = "$" + (txtCarrito.Items.Count * (32000 - 16000));
             }
-        } /*estos es una prueba*/ 
+        } 
 
         
     }

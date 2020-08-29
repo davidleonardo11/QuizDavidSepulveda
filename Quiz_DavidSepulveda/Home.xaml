@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Home" Height="325" Width="795">
 
-    <Grid Background="#FFACFFC6" Height="325" Width="798" Visibility="Visible">
+    <Grid Height="325" Width="798" Visibility="Visible">
         <TextBlock HorizontalAlignment="Center" Text="Hola, te damos la bienvenida a Pizza the Chavez, por favor seleccione su sabor de preferencia." TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="780" FontWeight="Normal"/>
         <Label Content="Categoria" HorizontalAlignment="Left" Margin="13,68,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" FontFamily="Bahnschrift SemiBold"/>
         <ComboBox Name="cmbCategoria" HorizontalAlignment="Left" Margin="20,177,0,0" VerticalAlignment="Top" Width="128" Visibility="Hidden"/>
@@ -16,7 +16,7 @@
         <Slider HorizontalAlignment="Center" Margin="0,387,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Sabor que prefiere" HorizontalAlignment="Left" Margin="11,147,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" FontFamily="Bahnschrift SemiBold"/>
         <Label Content="Agende su fecha de pedido" HorizontalAlignment="Left" Margin="258,66,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <Label Name="lblFecha" Content="lbl1" HorizontalAlignment="Left" Margin="273,257,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" FontFamily="Bahnschrift SemiBold" Visibility="Hidden"/>
+        <Label Name="lblFecha" Content="lbl1" HorizontalAlignment="Left" Margin="273,267,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" FontFamily="Bahnschrift SemiBold" Visibility="Hidden"/>
         <CheckBox Name="cbxVegana" Content="Vegana" HorizontalAlignment="Left" Margin="24,104,0,0" VerticalAlignment="Top" Checked="cbxVegana_Checked" Unchecked="cbxVegana_Unchecked" />
         <CheckBox Name="cbxCarnes" Content="Carnes, otras" HorizontalAlignment="Left" Margin="102,104,0,0" VerticalAlignment="Top" Checked="cbxCarnes_Checked" Unchecked="cbxCarnes_Unchecked"/>
         <ComboBox Name="cmbVegana" HorizontalAlignment="Left" Margin="20,177,0,0" VerticalAlignment="Top" Width="128"  Visibility="Hidden"/>
@@ -27,6 +27,8 @@
         <Button Name="btnPedido" Content="Hacer pedido" HorizontalAlignment="Left" Margin="542,229,0,0" VerticalAlignment="Top" Height="24" Width="90" Click="btnPedido_Click"/>
         <Button Name="btnCerrarSesion" Content="Cerrar Sesion" HorizontalAlignment="Left" Margin="2,303,0,0" VerticalAlignment="Top" Height="21" Width="92" BorderBrush="White" Background="#FF080A09" Foreground="White" Click="btnCerrarSesion_Click"/>
         <Button Name="btnQuitar" Content="Quitar del carrito" HorizontalAlignment="Left" Margin="30,261,0,0" VerticalAlignment="Top" Height="27" Width="109" Click="btnQuitar_Click"/>
+        <Label Name="lblPrecio" Content="" HorizontalAlignment="Left" Margin="587,192,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="514,192,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

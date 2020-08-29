@@ -77,7 +77,7 @@ namespace Quiz_DavidSepulveda {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Quiz_DavidSepulveda;V1.0.0.0;component/iniciosesion.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Quiz_DavidSepulveda;component/iniciosesion.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\InicioSesion.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
